@@ -1,13 +1,4 @@
-# Threat model — STRIDE-lite (Day 27)
-
-Scope: the capstone as deployed through Day 26 (`capstone/host/Capstone.Web`,
-`capstone/host/Capstone.Worker`, SQL, Service Bus, Key Vault, managed identity —
-see `infra/README.md`) plus this day's changes (network isolation for the data
-tier, auth/versioning/limits on the API — see `submission-day-27-task-1.md`).
-One category per STRIDE letter; each threat is tied to a real actor and a real
-action against the invoice domain `DESIGN.md` describes, not a generic checklist
-item. "Mitigated today" means a control that exists in the code or infra as of
-this commit; "open" means a real, named gap — not a hedge.
+# Threat model — STRIDE-lite 
 
 ## Spoofing — pretending to be someone you're not
 
